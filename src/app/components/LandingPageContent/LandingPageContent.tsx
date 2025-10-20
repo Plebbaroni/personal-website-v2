@@ -11,7 +11,7 @@ function LandingPageContent() {
             </aside>
             <div className={classes.me}>
                 <Image src="/me.png" alt="me" className={classes.meimg} width={280} height={372} priority/>
-                <p className={classes.caption}>me.png | blue mountains, nsw | aug2025</p>
+                <p className={classes.caption}>me.png | blue mountains, nsw | 08/25</p>
             </div>
             <div className={classes.divider}/>
             <div className={classes.introtext}>
