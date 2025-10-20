@@ -5,6 +5,7 @@ import MainPage from "./MainPage/MainPage";
 import classes from "./page.module.css";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import "./globals.css";
 
 export default function Home() {
   useEffect(() => {
