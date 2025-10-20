@@ -6,6 +6,7 @@ import classes from "./page.module.css";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import "./globals.css";
+import ClientOnly from "./components/ClientOnly/ClientOnly";
 
 export default function Home() {
   useEffect(() => {
@@ -19,15 +20,17 @@ export default function Home() {
     }, []);
 
   return (
-    <motion.div
-            className={classes.wrapper}
-            initial={{ opacity: 0, y: 5 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-    >
-    <div className={classes.fullheight}>
-      <MainPage/>
-    </div>
-    </motion.div>
+    <ClientOnly>
+      <motion.div
+              className={classes.wrapper}
+              initial={{ opacity: 0, y: 5 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+      >
+        <div className={classes.fullheight}>
+          <MainPage/>
+        </div>
+      </motion.div>
+    </ClientOnly>
   );
 }
