@@ -100,6 +100,21 @@
   }
 }
 
+@media (max-height: 800px) {
+  html { font-size: 15px; }
+  .meimg { width: 240px; }
+}
+
+@media (max-height: 750px) {
+  html { font-size: 14px; }
+  .meimg { width: 200px; }
+}
+
+@media (max-height: 600px) {
+  html { font-size: 13px; }
+  .meimg { width: 160px; }
+}
+
 .metadata {
   position: absolute;
   top: 5rem;
