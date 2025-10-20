@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react'
 import classes from './LandingPageContent.module.css';
+import Activity from '../Activity/Activity';
 
 function LandingPageContent() {
   return (
@@ -16,7 +17,7 @@ function LandingPageContent() {
             <div className={classes.introtext}>
                 <p className={classes.introline}>Hi! I&#39;m Jared Schulz. Nice to meet you.</p>
                 <p className={classes.introline}>I&#39;m in my 2nd year of Computer Science at UNSW.</p>
-                <p className={classes.introline}>I&#39;m currently [cycle through hardcoded list of things I&#39;m doing]</p>
+                <div className={classes.introline}>I&#39;m <Activity/></div>
                 <p className={classes.introline}>You can view my projects and experience by clicking the icon on the top left, toggling a navbar(in the future). Alternatively, you can reach me on the platforms below:</p>
             </div>
             <div className={classes.links}>
