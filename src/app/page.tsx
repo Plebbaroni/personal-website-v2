@@ -6,7 +6,6 @@ import classes from "./page.module.css";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import "./globals.css";
-import ClientOnly from "./components/ClientOnly/ClientOnly";
 
 export default function Home() {
   const [height, setHeight] = useState<number | null>(null);
