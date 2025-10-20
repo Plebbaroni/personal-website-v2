@@ -13,7 +13,9 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
     >
-      <MainPage/>
+      <div className={classes.fullheight}>
+        <MainPage/>
+      </div>
     </motion.div>
   );
 }
