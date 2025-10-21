@@ -39,6 +39,8 @@
 .introline {
     margin-bottom: 1rem;
     font-family: "IBM Plex Mono", monospace;
+    display: inline-flex;
+    align-items: baseline;
 }
 
 .links {
