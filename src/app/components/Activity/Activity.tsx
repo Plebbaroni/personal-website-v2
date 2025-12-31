@@ -26,7 +26,7 @@ export default function Activity() {
 
     const scheduleNext = () => {
       clearTimer();
-      const delay = Math.random() * 5000 + 5000; // 5–10s delay
+      const delay = Math.random() * 3000 + 3000; // 3–6s delay
       timeoutRef.current = setTimeout(() => {
         setIndex((i) => i + 1);
         scheduleNext();
