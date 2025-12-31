@@ -3,11 +3,12 @@ import TextTransition, { presets } from "react-text-transition";
 const activities = [
     "passionate about building cool things. 🤖",
     "probably craving chinese food. 🥡",
-    "contributing to CHAOS at UNSW DevSoc. ⚙️",
+    "contributing to(soon directing) CHAOS at UNSW DevSoc. ⚙️",
     "learning how to play the piano. 🎶",
     "trying to expand my cap collection. 🧢",
     "in my Rust training arc. 🦀",
-    "chronically addicted to monster energy drinks. 🧌"
+    "chronically addicted to monster energy drinks. 🧌",
+    "starting an internship position at RTOPilot. ✈️"
 ]
 
 export default function Activity() {
