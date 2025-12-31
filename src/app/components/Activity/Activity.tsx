@@ -3,13 +3,13 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const activities = [
     "passionate about building cool things. 🤖",
+    "starting an internship position at RTOPilot. ✈️",
     "probably craving chinese food. 🥡",
     "contributing to(soon directing) CHAOS at UNSW DevSoc. ⚙️",
     "learning how to play the piano. 🎶",
     "trying to expand my cap collection. 🧢",
     "in my Rust training arc. 🦀",
     "chronically addicted to monster energy drinks. 🧌",
-    "starting an internship position at RTOPilot. ✈️"
 ]
 
 export default function Activity() {
