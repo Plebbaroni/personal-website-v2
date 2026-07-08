@@ -1,0 +1,59 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 5.75rem minmax(0, 1fr);
+  column-gap: 1.25rem;
+  align-items: start;
+}
+
+.year {
+  padding-top: 0.18rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.name {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.4rem);
+  font-weight: 400;
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.92);
+}
+
+.blurb {
+  max-width: 42rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+.stack {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.82rem;
+  text-transform: lowercase;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 640px) {
+  .item {
+    grid-template-columns: 1fr;
+    row-gap: 0.5rem;
+  }
+}
