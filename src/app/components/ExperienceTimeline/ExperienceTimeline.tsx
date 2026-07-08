@@ -3,18 +3,18 @@ import classes from "./ExperienceTimeline.module.css";
 
 const experienceItems = [
   {
-    period: "2026 - present",
-    role: "Incoming Software Engineer Intern",
+    period: "Dec 2025 - May 2026",
+    role: "Software Engineer Intern",
     org: "RTOPilot",
     description:
-      "Scaffold space for a short summary of the work, team, or impact you want to highlight here.",
+      "Developing full-stack features for a learning management system used by 3000+ users to keep track of 100,000+ enrolments, building customer-facing functionalities related to enrolment management, payment, emails, and onboarding using the T3 stack."
   },
   {
-    period: "2025 - present",
-    role: "CHAOS @ UNSW DevSoc",
-    org: "Contributor / Director track",
+    period: "Dec 2025 - present",
+    role: "Project Director - C.H.A.O.S. (CHAOS Hiring And Offer System)",
+    org: "UNSW Software Development Society",
     description:
-      "Use this entry for leadership, community work, or technical projects you have been building alongside study.",
+      "Leading the development of C.H.A.O.S (Chaos Hiring And Offer System), an in-house hiring platform designed to support society recruitment campaigns through critical periods including a beta test supporting 15+ applications."
   },
 ];
 

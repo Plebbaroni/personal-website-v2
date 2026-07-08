@@ -15,10 +15,6 @@ function MainPage() {
         <section className={classes.experienceSection}>
           <div className={classes.sectionInner}>
             <p className={classes.sectionEyebrow}>experience</p>
-            <h2 className={classes.sectionTitle}>Experience</h2>
-            <p className={classes.sectionCopy}>
-              A minimalist timeline scaffold for roles, leadership, and project work.
-            </p>
             <ExperienceTimeline />
           </div>
         </section>
