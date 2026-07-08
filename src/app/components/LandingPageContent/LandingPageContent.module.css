@@ -1,18 +1,44 @@
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionEyebrow {
+  width: min(95%, 800px);
+  margin-bottom: 0.75rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.85rem;
+  text-align: left;
+  text-transform: lowercase;
+  letter-spacing: 0.08em;
+  color: rgba(0, 0, 0, 0.45);
+}
+
 .caption {
-    text-align: left;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 8px;
-    font-weight: lighter;
-    color: rgba(0, 0, 0, 0.6);
-    opacity: 1;
-    line-height: 1.4;
+  width: min(100%, 280px);
+  text-align: left;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 8px;
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  line-height: 1.4;
 }
 
 .meimg {
-    width: 280px;
-    height: auto;
-    max-width: 100%;
-    object-fit: cover;
+  width: min(280px, 100%);
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.me {
+  width: min(100%, 280px);
 }
 
 .divider {
@@ -25,47 +51,48 @@
 
 .introtext {
   max-width: 800px;
-  width: 95%;
+  width: min(95%, 800px);
   margin: 0 auto;
   text-align: left;
   word-wrap: break-word;
   overflow-wrap: break-word;
   font-weight: lighter;
-  font-size: 1.3rem;
-  color: rgba(0, 0, 0, 096);
+  font-size: clamp(1rem, 0.9rem + 0.9vw, 1.3rem);
+  color: rgba(0, 0, 0, 0.96);
   line-height: 1.6;
 }
 
 .introline {
-    margin-bottom: 1rem;
-    font-family: "IBM Plex Mono", monospace;
-    display: inline-flex;
-    align-items: baseline;
+  margin-bottom: 1rem;
+  font-family: "IBM Plex Mono", monospace;
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .links {
-    display: flex;
-    font-size: 1.3rem;
-    max-width: 800px;
-    width: 95%;
-    justify-content: center;
-    font-size: 1.3rem;
-    font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  max-width: 800px;
+  width: min(95%, 800px);
+  font-size: clamp(1rem, 0.9rem + 0.9vw, 1.3rem);
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .linkdivider {
-    font-size: 1.3rem;
-    margin: 0.5rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    cursor: default;
+  font-size: inherit;
+  margin: 0 0.5rem;
+  cursor: default;
 }
 
 .deactivatedlink {
-    cursor: default;
-    color: rgba(0, 0, 0, 0.3);
-    font-size: 1.3rem;
-    font-family: "IBM Plex Mono", monospace;
+  cursor: default;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: inherit;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 @media (max-width: 1280px) {
@@ -81,24 +108,59 @@
 }
 
 @media (max-width:900px) {
-    .thanks {
-        display: none;
-    }
+  .wrapper {
+    justify-content: center;
+  }
 
-    .metadata {
-        display: none;
-    }
+  .sectionEyebrow {
+    margin-bottom: 0.5rem;
+  }
+
+  .thanks {
+    display: none;
+  }
+
+  .metadata {
+    display: none;
+  }
+
+  .thankswrapper {
+    min-width: 0;
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
   .meimg {
     width: 140px;
   }
+
+  .caption,
+  .me {
+    width: min(100%, 140px);
+  }
+
+  .divider {
+    margin: 12px 0;
+  }
 }
 
 @media (max-width: 480px) {
   .meimg {
     width: 120px;
+  }
+
+  .caption,
+  .me {
+    width: min(100%, 120px);
+  }
+
+  .links {
+    gap: 0.15rem;
+  }
+
+  .linkdivider {
+    margin: 0 0.2rem;
   }
 }
 
@@ -132,19 +194,19 @@
 }
 
 .thankswrapper {
-    min-width: 700px;
-    max-width: 1200px;
-    height: 3rem;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
+  min-width: min(700px, 100%);
+  max-width: 1200px;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
 }
 
 .thanks {
-    align-items: right;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 10px;
-    font-weight: lighter;
-    color: rgba(0, 0, 0, 0.6);
+  align-items: right;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.6);
 }
